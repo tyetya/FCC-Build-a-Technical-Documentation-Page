@@ -1,4 +1,30 @@
-* {
+/* DARK MODE */
+
+/*  * {
     background-color: black;
     color: yellow;
 }
+    */
+
+/* Alapértelmezett stílusok (aszinkron eszközökhöz, nagy képernyők) */
+body {
+    font-size: 28px;
+}
+
+/* Media query - ha a képernyő szélessége legfeljebb 600px (mobil eszközök) */
+@media screen and (min-width: 1024px) {
+    #navbar {
+        position: fixed; /* A navbar fix pozícióban lesz */
+        left: 0; /* Bal oldalra kerül */
+        top: 0;
+        width: 200px; /* Példa szélesség */
+        height: 100vh; /* Magasság: teljes képernyő */
+        display: block;
+        font-size: 20px;
+    }
+}
+
+main {
+    margin-left: 200px;
+}
+
